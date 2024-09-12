@@ -81,8 +81,64 @@ func main() {
 
 # Exp - 3 : Program to use struct that is imported from another package.
 
-```go
 
+`main.go`
+```go
+package main
+
+import (
+	parent "family/father"
+	child "family/father/son"
+	"fmt"
+)
+
+func main() {
+	f := new(parent.Father)
+	fmt.Println(f.Data("Jim"))
+
+	c := new(child.Son)
+	fmt.Print(c.Data("John"))
+}
+```
+`father.go`
+```go
+package father
+
+import "fmt"
+
+func init() {
+	fmt.Println("Father package initialized...")
+}
+
+type Father struct {
+	Name string
+}
+
+func (f Father) Data(name string) string {
+	f.Name = "Father : " + name
+	return f.Name
+}
+```
+
+`son.go`
+
+```go
+package son
+
+import "fmt"
+
+func init() {
+	fmt.Println("Son package initialized...")
+}
+
+type Son struct {
+	Name string
+}
+
+func (s Son) Data(name string) string {
+	s.Name = "Son : " + name
+	return s.Name
+}
 ```
 
 # Exp - 4 : Calculate Standard Deviation in Math package
