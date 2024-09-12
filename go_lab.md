@@ -1,4 +1,4 @@
-# Floyd's Triangle
+# Exp - 5 : Floyd's Triangle
 
 ```go
 package main
@@ -19,7 +19,12 @@ func main() {
 }
 ```
 
-# Check whether a number is palindrome or not
+# Exp - 6 : Addition of two strings
+
+```go
+```
+
+# Exp - 7 : Check whether a number is palindrome or not
 
 ```go
 package main
