@@ -1,3 +1,31 @@
+# Exp - 4 : Calculate Standard Deviation in Math package
+
+```go
+package main
+import (
+    "fmt"
+    "math"
+    )
+
+func main() {
+    var mean, sum, variance, sd float64
+    var nums[4] float64
+    for i:=0; i<4; i++{
+        fmt.Scan(&nums[i])
+        sum+=nums[i]
+    }
+    mean = sum / 4
+    
+    for i:=0; i<4; i++{
+        variance += math.Pow(nums[i] - mean, 2)
+    }
+    
+    sd = math.Sqrt(variance / 4)
+    
+    fmt.Println(sd)
+}
+```
+
 # Exp - 5 : Floyd's Triangle
 
 ```go
