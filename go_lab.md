@@ -1,15 +1,52 @@
 # Exp - 1 : Program to find LCM and GCD of given two numbers.
 
 ```go
+package main
+import "fmt"
 
-
+    func lcm(temp1 int, temp2 int) {
+        var res int = 1
+        if (temp1>temp2){
+            res = temp1
+        }else{
+            res = temp2
+        }
+        for {
+            if (res % temp1 ==0 && res % temp2 == 0){
+                fmt.Println("LCM : ", res)
+                break
+            }
+            res++
+        }
+        return
+    }
+    
+    func gcd(temp1 int, temp2 int){
+        var res int = 1
+        for i:=1; i<=temp1 && i<=temp2; i++{
+            if (temp1%i ==0 && temp2%i==0){
+                res = i
+            }
+        }
+        fmt.Print("GCD : ", res)
+        return
+    }
+func main() {
+    var n1, n2 int = 3, 6
+    var choice int
+    fmt.Scan(&choice)
+    switch choice{
+        case 1 : lcm(n1, n2)
+        case 2 : gcd(n1, n2)
+        default : fmt.Print("Invalid input")
+    }
+}
 ```
 
 
 # Exp - 2 : Print Pyramid of numbers
 
 ```go
-
 package main
 import "fmt"
 
