@@ -1,3 +1,45 @@
+# Exp - 2 : Print Pyramid of numbers
+
+```go
+
+package main
+import "fmt"
+
+func main() {
+    var temp, rows, temp1, k int
+    fmt.Scan(&rows)
+    for i:=1; i<=rows; i++{
+        for j:=1; j<=rows-i; j++{
+            fmt.Print(" ")
+            temp++
+        }
+        for{
+            if (temp <= rows-1){
+                fmt.Printf("%d", i+k)
+                temp++
+            }else{
+                temp1++
+                fmt.Printf("%d", (i+k-2*temp1))
+            }
+            k++
+            if(k == (2*i-1)){
+                break
+            }
+        }
+        temp = 0
+        temp1 = 0
+        k = 0
+        fmt.Println("")
+    }
+}
+```
+
+# Exp - 3 : Program to use struct that is imported from another package.
+
+```go
+
+```
+
 # Exp - 4 : Calculate Standard Deviation in Math package
 
 ```go
