@@ -1,3 +1,11 @@
+# Exp - 1 : Program to find LCM and GCD of given two numbers.
+
+```go
+
+
+```
+
+
 # Exp - 2 : Print Pyramid of numbers
 
 ```go
