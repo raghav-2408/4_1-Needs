@@ -1,6 +1,22 @@
 # Floyd's Triangle
 
 ```go
+package main
+import "fmt"
+
+func main() {
+    var rows int
+    var temp int = 1
+    fmt.Print("Enter the no of rows :")
+    fmt.Scanln(&rows)
+    for i:=0; i<rows; i++{
+        for j:=0; j<=i; j++{
+            fmt.Printf(" %d", temp)
+            temp++
+        }
+        fmt.Println("")
+    }
+}
 ```
 
 # Check whether a number is palindrome or not
