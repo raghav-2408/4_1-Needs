@@ -22,6 +22,17 @@ func main() {
 # Exp - 6 : Addition of two strings
 
 ```go
+package main
+import "fmt"
+
+func main() {
+    var s1, s2 string
+    fmt.Print("Enter string 1 : ")
+    fmt.Scan(&s1)
+    fmt.Print("Enter string 2 : ")
+    fmt.Scan(&s2)
+    fmt.Println(s1+s2)
+}
 ```
 
 # Exp - 7 : Check whether a number is palindrome or not
