@@ -31,6 +31,7 @@ import "fmt"
         fmt.Print("GCD : ", res)
         return
     }
+
 func main() {
     var n1, n2 int = 3, 6
     var choice int
