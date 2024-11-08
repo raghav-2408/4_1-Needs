@@ -57,3 +57,26 @@ func main() {
 	fmt.Print(removeDuplicates(arr))
 }
 ```
+
+# Week - 11
+
+# Write a GO program with an example of Array reverse sort Functions for integers and strings.
+
+```go
+package main
+
+import (
+	"fmt"
+	"sort"
+)
+
+func main() {
+	arr := []int{1, 2, 3, 4}
+	sort.Sort(sort.Reverse(sort.IntSlice(arr)))
+	fmt.Println("Reversed Array : ", arr)
+
+	str := []string{"apple", "ball", "dog", "cat"}
+	sort.Sort(sort.Reverse(sort.StringSlice(str)))
+	fmt.Print("Reversed String : ", str)
+}
+```
