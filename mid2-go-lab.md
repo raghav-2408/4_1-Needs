@@ -1,3 +1,11 @@
+# Week - 8
+
+# Write a GO program to build a Contact form.
+
+```go
+
+```
+
 # Week - 9
 
 # Write a GO Program to calculate average using arrays.
@@ -79,4 +87,32 @@ func main() {
 	sort.Sort(sort.Reverse(sort.StringSlice(str)))
 	fmt.Print("Reversed String : ", str)
 }
+```
+
+# Week - 12
+
+# Write a program comprising of Contains, ContainsAny, Count, EqualFold String Functions.
+
+```go
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	fmt.Println(strings.Contains("Kim Jong Un", "Jong"))           //true
+	fmt.Println(strings.ContainsAny("Kim Jong Un", "im"))          // true
+	fmt.Println(strings.Count("Kim Jong Un", "Jong"))              // 1
+	fmt.Println(strings.EqualFold("Kim Jong Un", "Yoon Suk Yeol")) // false
+}
+```
+
+# Week - 14
+
+# Write a GO program to create multiple goroutines and implement how the goroutines scheduler behaves with three logical processors for CRUD using MySQL fromm Scratch.
+
+
+```go
 ```
